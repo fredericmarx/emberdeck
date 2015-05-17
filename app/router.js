@@ -6,8 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('slides', function() {
-    this.route('slide');
+  this.resource('slides', function() {
+    this.resource('slide', { path: '/:slide_id'});
   });
 });
 
