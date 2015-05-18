@@ -2,18 +2,18 @@ const slides = [
 
 {
   id: 1,
-  title: 'Trok',
-  body: 'Glowacki'
+  title: 'Ember.js: Die&nbsp;größten Stützräder der&nbsp;Welt',
+  main: '@fredericmarx'
 },
 {
   id: 1243,
   title: 'Trok',
-  body: 'Glowacki'
+  main: 'Glowacki'
 },
 {
   id: 2,
   title: 'Slide 2',
-  body: 'Test'
+  main: 'Test'
 }
 
 ]
