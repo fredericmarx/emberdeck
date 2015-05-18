@@ -1,0 +1,10 @@
+<article class="slide">
+{{model.slide.title}}
+{{model.slide.body}}
+<button {{action "previousSlide"}}>Previous</button>
+<button {{action "nextSlide"}}>Next</button>
+<progress class="slide__progress" value={{currentSlide}} max={{slidesCount}}></progress>
+{{edk-hotkey action="previousSlide" key="37"}}
+{{edk-hotkey action="nextSlide" key="39"}}
+{{edk-hotkey action="nextSlide" key="32"}}
+</article>
