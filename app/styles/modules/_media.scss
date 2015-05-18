@@ -1,0 +1,10 @@
+iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: (185vh / -2);
+  width: 185vh;
+  height: 100vh;
+  pointer-events: none;
+  max-width: 185vh !important;
+}

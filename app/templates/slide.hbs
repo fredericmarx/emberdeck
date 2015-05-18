@@ -2,15 +2,13 @@
   {{#if model.slide.title}}
     <h1>{{{model.slide.title}}}</h1>
   {{/if}}
-  <main class="slide__section">
-    {{{model.slide.main}}}
-  </main>
+  {{{model.slide.main}}}
   <nav class="nav--arrows">
     <button class="nav__button button--previous" {{action "previousSlide"}}>Previous</button>
     <button class="nav__button button--next" {{action "nextSlide"}}>Next</button>
   </nav>
-<progress class="progress progress--main" value={{currentSlide}} max={{slidesCount}}></progress>
-{{edk-hotkey action="previousSlide" key="37"}}
-{{edk-hotkey action="nextSlide" key="39"}}
-{{edk-hotkey action="nextSlide" key="32"}}
+  <progress class="progress progress--main" value={{currentSlide}} max={{slidesCount}}></progress>
+  {{edk-hotkey action="previousSlide" key="37"}}
+  {{edk-hotkey action="nextSlide" key="39"}}
+  {{edk-hotkey action="nextSlide" key="32"}}
 </article>
