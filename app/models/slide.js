@@ -7,7 +7,8 @@ const slideModel = DS.Model.extend({
   footer: DS.attr('string'),
   color: DS.attr('string'),
   backgroundColor: DS.attr('string'),
-  img: DS.attr('string')
+  img: DS.attr('string'),
+  template: DS.attr('string')
 });
 
 slideModel.reopenClass({

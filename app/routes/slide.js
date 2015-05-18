@@ -6,5 +6,13 @@ export default Ember.Route.extend({
       slide: this.store.find('slide', params.slide_id),
       slides: this.store.find('slide')
     });
+  },
+  renderTemplate: function(params) {
+    const template = params.get('model.slide').get('template');
+    if (template) {
+      this.render('test');
+    } else {
+      this.render('slide');
+    }
   }
 });

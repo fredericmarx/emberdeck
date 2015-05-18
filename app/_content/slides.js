@@ -37,17 +37,6 @@ const slides = [
   `
 },
 {
-  id: 4.3,
-  title: 'UX',
-  main:`
-  <ul>
-    <li>Input / Output</li>
-    <li>Asynchron</li>
-    <li>Native™ User Experience</li>
-  </ul>
-  `
-},
-{
   id: 5,
   title: 'Infrastruktur'
 },
@@ -118,6 +107,10 @@ const slides = [
 {
   id: 'magic',
   main:'<iframe src="//giphy.com/embed/n0WvhHFTpihk4" width="480" height="274" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+},
+{
+  id: 'templatetest',
+  template:'test'
 }
 ]
 
