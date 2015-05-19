@@ -1,6 +1,9 @@
-<article class="slide">
+<article class="slide {{if titleOnly 'slide--title-only'}}" style="color: {{model.slide.color}}; background-color: {{model.slide.backgroundColor}};">
   {{#if model.slide.title}}
     <h1>{{{model.slide.title}}}</h1>
+  {{/if}}
+  {{#if model.slide.subtitle}}
+    <h2>{{{model.slide.subtitle}}}</h2>
   {{/if}}
   {{{model.slide.main}}}
   <nav class="nav--arrows">

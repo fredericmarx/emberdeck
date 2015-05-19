@@ -1,9 +1,16 @@
 .slide {
   height: 100vh;
   width: 100vw;
-  background-color: darken(purple, 12);
+  background-color: $cl-background;
   color: white;
   position: relative;
   padding: 10vmin 6vmin;
   overflow: hidden;
+
+  &--title-only {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

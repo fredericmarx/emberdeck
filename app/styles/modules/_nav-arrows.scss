@@ -8,7 +8,6 @@
   -webkit-appearance: none;
   background: none;
   border: none;
-  overflow: hidden;
   height: 2rem;
   width: 2rem;
   white-space: nowrap;
@@ -30,22 +29,21 @@
   &::after {
     content: "";
     display: block;
-    height: 0;
-    width: 0;
-    border: 1rem solid transparent;
+    height: 65%;
+    width: 65%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    border-left-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 .button--previous::after {
-  border-right-color: white;
-  position: absolute;
-  top: 0;
-  right: .5rem;
+  transform: rotate(-45deg);
 }
 
 .button--next::after {
-  border-left-color: white;
-  position: absolute;
-  top: 0;
-  left: .5rem;
+  transform: rotate(135deg);
 }

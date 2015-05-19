@@ -7,7 +7,7 @@
   }
 
   &::-webkit-progress-value {
-    background-color: tomato;
+    background-color: $cl-magenta;
   }
 
   &.progress--main {

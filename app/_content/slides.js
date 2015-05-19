@@ -2,12 +2,11 @@ const slides = [
 
 {
   id: 1,
-  title: 'Ember.js: Die&nbsp;größten Stützräder der&nbsp;Welt',
-  main: '<p>@<a href="https://twitter.com/fredericmarx" rel="me">fredericmarx</a></p>'
+  title: 'Ember.js: Die&nbsp;größten Stützräder der&nbsp;Welt'
 },
 {
   id: 2,
-  title: '“A framework for ambitious web applications”'
+  title: '@<a href="https://twitter.com/fredericmarx" rel="me">fredericmarx</a>'
 },
 {
   id: 3,
@@ -15,7 +14,11 @@ const slides = [
 },
 {
   id: 4,
-  title: 'UX'
+  title: 'UX',
+  main: `
+  <ul>
+  </ul>
+  `
 },
 {
   id: 4.1,
@@ -38,7 +41,11 @@ const slides = [
 },
 {
   id: 5,
-  title: 'Infrastruktur'
+  title: 'Infrastruktur',
+  main:`
+  <ul>
+  </ul>
+  `
 },
 {
   id: 5.1,
@@ -112,6 +119,6 @@ const slides = [
   id: 'templatetest',
   template:'test'
 }
-]
+];
 
 export default slides;
