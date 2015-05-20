@@ -301,20 +301,123 @@ const slides = [
   title: 'Components'
 },
 {
+  id: '8934557568346',
+  main: `
+<p>Kernfeature für gekapselte, wiederverwendbare Einzelkomponenten in&nbsp;Ember.js</p>
+`
+},
+{
+  id: '0238344754344',
+  main: `
+<p>Kernfeature für gekapselte, wiederverwendbare Einzelkomponenten in&nbsp;Ember.js</p>
+<p>Besitzen Template und Controller</p>
+`
+},
+{
+  id: '934856839039035',
+  main: `
+<p>Kernfeature für gekapselte, wiederverwendbare Einzelkomponenten in&nbsp;Ember.js</p>
+<p>Besitzen Template und Controller</p>
+<p>Sind im Gegensatz zu Helpern stateful, asynchron und interaktiv</p>
+`
+},
+{
+  id: '023777345634424',
+  code:
+`// Standard Web Component
+<google-map latitude="37.77493" ↩
+longitude="-122.41942"></google-map>`
+},
+{
+  id: '563456346345563',
+  code:
+`// Standard Web Component
+<google-map latitude="37.77493" ↩
+longitude="-122.41942"></google-map>
+
+// Ember Component
+{{google-map latitude="37.77493" ↩
+longitude="-122.41942"}}`
+},
+{
+  id: '43534357342357944',
+  title: 'Aha-Erlebnis 1:',
+  main:`
+  <p>Ember Components akzeptieren Variablen als Attribute</p>
+  `
+},
+{
+  id: '2334856745634345',
+  title: 'Aha-Erlebnis 1:',
+  main:`
+  <p>Ember Components akzeptieren Variablen als Attribute</p>
+  <p>Variablen können alles sein: Arrays, Objekte, Funktionen, Langtexte…</p>
+  `
+},
+{
+  id: '7846456347564',
+  code:
+`// application.hbs
+{{my-nav pages=pageList}}
+
+// components/my-nav.hbs
+{{#each page in pages}}
+  <a href="{{page.url}}">{{page.title}}</a>
+{{/each}}`
+},
+{
+  id: '0003849572834990',
+  title: 'Aha-Erlebnis 2:',
+  main:`
+  <p>(Ember) Components müssen nicht sichtbar gerendert werden.</p>
+  <p>Sie eignen sich auch zum deklarativen Einbinden von Code in einen View</p>
+  `
+},
+{
   id: 'ember-way',
   title: 'The Ember Way'
 },
 {
+  id: 'opinionated',
+  title: 'Opinionated'
+},
+{
   id: '2346457823526',
-  title: 'Convention over configuration'
+  title: 'You should be using open source projects that align with your interests.',
+  subtitle: 'Tom Dale'
+},
+{
+  id: '78456745846529',
+  main:`
+  <p>Ember hat den Ruf, monolithisch zu sein.</p>
+  `
+},
+{
+  id: '89778234824873',
+  main:`
+  <p>Ember hat den Ruf, monolithisch zu sein.</p>
+  <p>Dabei handelt es sich um eine sorgfältig abgestimmte Sammlung von unabhängigen Modulen.</p>
+  `
+},
+{
+  id: '05893487579469',
+  main:`
+  <p>Ember hat den Ruf, monolithisch zu sein.</p>
+  <p>Dabei handelt es sich um eine sorgfältig abgestimmte Sammlung von unabhängigen Modulen.</p>
+  <p>Neue Module hinzufügen ist leicht, bestehende austauschen oft schwierig</p>
+  `
 },
 {
   id: '42354634573423',
   title: 'Wenn es ungewöhnlich lange dauert, ans Ziel zu kommen, nutzt du den falschen Weg.'
 },
 {
+  id: '03459346783456',
+  title: 'Der falsche Weg kann hierbei auch die Tatsache sein, dass du überhaupt Ember.js benutzt.'
+},
+{
   id: '357946752578',
-  title: 'Das Ember Ökosystem ist sehr dynamisch.'
+  title: 'Das Ember Ökosystem ist sehr&nbsp;agil.'
 },
 {
   id: '3254237345456',
@@ -330,13 +433,15 @@ const slides = [
   title: 'Progressive Enhancement'
 },
 {
-  id: '23425623467572',
-  title: 'Embers Verhältnis zu Progressive Enhancement ist&nbsp;schwierig.'
-},
-{
   id: '34534634673456345',
   title: '„Progressive Enhancement is dead.“',
   subtitle: 'Tom Dale, 2013'
+},
+{
+  id: '346575433345745544',
+  main:`
+  <blockquote lang="en"><p lang="en" dir="ltr">The Web is a platform, and there are basically three major pillars that prop it up.  There's HTML, there's CSS, and there's JavaScript.  For some reason, people decide that they're just going to disable JavaScript and decide that that is some arbitrary hoop that people have to jump through.</p>&mdash; Tom Dale (@tomdale) <a href="http://shoptalkshow.com/episodes/147-tom-dale/">December 22, 2014</a></blockquote>
+  `
 },
 {
   id: '234235236563465',
@@ -346,65 +451,95 @@ const slides = [
 },
 {
   id: '32423653463456345',
-  title: 'Progressive Enhancement (wie jedes Paradigma) ist in Ember.js nur realistisch umsetzbar, wenn von Haus aus unterstützt.'
+  title: 'Progressive Enhancement (wie jedes Paradigma) ist in Ember.js nur sinnvoll umsetzbar, wenn von Haus aus unterstützt.'
 },
 {
-  id: 'performance',
-  title: 'Performance'
+  id: '345358923572348823',
+  title: 'Sollte ich Ember.js einsetzen?'
 },
 {
-  id: '234353463452',
-  title: 'Embers Verhältnis zu Performance ist&nbsp;schwierig.'
+  id: '894563453456345345',
+  title: 'Es gibt keine klare Antwort, nur Indikatoren.'
 },
 {
-  id: '533442362365',
-  main:`
-  <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Our goal is for people to take the Ember CLI apps they write today and have them &quot;just work&quot; for the SEO case.</p>&mdash; Tom Dale (@tomdale) <a href="https://twitter.com/tomdale/status/544582581237190657">December 15, 2014</a></blockquote>
-  `
-},
-{
-  id: '23426346234',
-  title: 'Der initiale Page-Load ist langsam',
-  main:`
+  id: '84636356355334552',
+  title: 'Indikatoren für Ember.js',
+  main: `
   <ul>
-    <li>JavaScript Payload</li>
-    <li>Client Side Templates</li>
+    <li>Dashboard-Anwendung</li>
+    <li>Bestehende RESTful API</li>
+    <li>Fluktuation im Entwicklungsteam</li>
+    <li>Wenig Ressourcen für Anwendungsarchitektur</li>
   </ul>
   `
 },
 {
-  id: '23534634343',
-  title: 'Ein Performance Win stellt sich erst dann ein, wenn man die Seite als App betrachtet',
-  main:`
+  id: '574576895447774',
+  title: 'Indikatoren gegen Ember.js',
+  main: `
   <ul>
-    <li>Initialer Page Load ≙ Installation</li>
-    <li>Robustes Caching</li>
+    <li>Content-Website</li>
+    <li>Mikrooptimierung der Performance</li>
+    <li>Mikrooptimierung der Architektur</li>
+    <li>Mikrooptimierung der Build Tools</li>
+    <li>Progressive Enhancement einer statischen Seite</li>
   </ul>
   `
 },
 {
-  id: '323784964378',
-  title: 'Use Case: <a href="https://ghost.org/">Ghost</a> Admin Interface'
-},
-{
-  id: '234234546753',
-  title: 'Aber selbst da gilt: Schneller wäre&nbsp;besser!'
+  id: 'fazit',
+  title: 'Fazit:'
 },
 {
   id: '534745784545',
-  title: 'Es spricht vieles dagegen,<br>Ember.js einzusetzen.'
+  title: 'Es spricht einiges dagegen,<br>Ember.js einzusetzen.'
 },
 {
   id: '345745745764',
-  title: 'Es spricht <em>noch</em> vieles dagegen, Ember.js <em>im Produkt</em> einzusetzen.'
+  title: 'Es spricht <em>noch</em> einiges dagegen, Ember.js <em>produktiv</em> einzusetzen.'
 },
 {
-  id: '534678843534',
+  id: '23463462134',
+  title: 'Trotzdem lohnt es sich, sich mit Ember.js zu beschäftigen.'
+},
+{
+  id: '8578377945623',
+  title: 'Experimentierkasten, um ein Gefühl für Webapps zu bekommen'
+},
+{
+  id: '925569487936',
+  title: 'Schnelles, kostengünstiges Prototyping'
+},
+{
+  id: '345636745746',
+  title: 'Es tut nicht weh, einen Ember-Prototypen einzustampfen.'
+},
+{
+  id: '73345306234683',
+  title: 'Tests und Module können in Produktion übernommen werden.'
+},
+{
+  id: 'es2015',
+  title: 'Spielwiese für ES2015'
+},
+{
+  id: '456745868456722',
+  code:
+`// Nützliche ES2015 Features
+
+const, let
+\`template strings &&
+tagged templates\`
+import foo from 'module'
+promise.then(onSuccess, onFail)`
+},
+{
+  id: 'spacecat',
+  main:'<iframe src="//giphy.com/embed/OTOXNsMqmoNEI" width="480" height="441" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+},
+{
+  id: 'zukunft',
   title: 'Zukunftstechnologie'
-},
-{
-  id: '6234653455633',
-  main:'<iframe src="//giphy.com/embed/ySdvL3vICLowU" width="480" height="269" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
 },
 {
   id: 'isemberfastyet',
@@ -418,6 +553,12 @@ const slides = [
 {
   id: 'fastboot',
   title: '<a href="https://github.com/tildeio/ember-cli-fastboot">FastBoot</a>'
+},
+{
+  id: '533442362365',
+  main:`
+  <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Our goal is for people to take the Ember CLI apps they write today and have them &quot;just work&quot; for the SEO case.</p>&mdash; Tom Dale (@tomdale) <a href="https://twitter.com/tomdale/status/544582581237190657">December 15, 2014</a></blockquote>
+  `
 },
 {
   id: '6346582354526',
@@ -465,23 +606,28 @@ const slides = [
   subtitle: 'W3C HTML Design Principles'
 },
 {
-  id: '266325733646',
-  title: '#Emberjs #FF',
+  id: 'links',
+  title: 'Linktipps',
   main: `
-  <p>
+  <p><small>
+  <a href="http://www.emberaddons.com">emberaddons.com</a><br>
+  <a href="http://eloquentjavascript.net/">Eloquent Javascript</a> von <a href="https://twitter.com/marijnjh">@marijnjh</a><br>
+    <a href="https://www.youtube.com/watch?v=2b1vcg_XSR8">Test Driven Development Talk</a> von <a href="https://twitter.com/toranb">@toranb</a><br>
+  <a href="http://shoptalkshow.com/episodes/147-tom-dale/">ShopTalk Show Episode 147</a> mit <a href="https://twitter.com/tomdale">@tomdale</a>
+  </small></p>
+  <footer>
+  <p><small>
     <a href="https://twitter.com/emberjs">@emberjs</a>,
     <a href="https://twitter.com/emberconf">@emberconf</a>,
     <a href="https://twitter.com/tildeio">@tildeio</a>,
     <a href="https://twitter.com/tomdale">@tomdale</a>,
     <a href="https://twitter.com/wykatz">@wykatz</a>,
     <a href="https://twitter.com/ebryn">@ebryn</a>,
+    <a href="https://twitter.com/stefanpenner">@stefanpenner</a>,
     <a href="https://twitter.com/dockyard">@dockyard</a>,
     <a href="https://twitter.com/bcardarella">@bcardarella</a>
-  </p>
-  <p>Linktipps:<br>
-  <a href="https://www.youtube.com/watch?v=2b1vcg_XSR8">Test Driven Development Talk</a> von <a href="https://twitter.com/toranb">@toranb</a><br>
-  <a href="http://shoptalkshow.com/episodes/147-tom-dale/">ShopTalk Show Episode 147</a> mit <a href="https://twitter.com/tomdale">@tomdale</a>
-  </p>
+  </small></p>
+  </footer>
   `
 }
 ];
