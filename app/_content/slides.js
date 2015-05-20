@@ -301,6 +301,160 @@ const slides = [
   title: 'Components'
 },
 {
+  id: 'ember-way',
+  title: 'The Ember Way'
+},
+{
+  id: '2346457823526',
+  title: 'Convention over configuration'
+},
+{
+  id: '42354634573423',
+  title: 'Wenn es ungewöhnlich lange dauert, ans Ziel zu kommen, nutzt du den falschen Weg.'
+},
+{
+  id: '357946752578',
+  title: 'Das Ember Ökosystem ist sehr dynamisch.'
+},
+{
+  id: '3254237345456',
+  title: 'Schutzmechanismen gegen Day&nbsp;Zero&nbsp;Rewrites'
+},
+{
+  id: '444842562343',
+  title: '6 Wochen Releasezyklus',
+  subtitle: 'Canary → Beta → Stable'
+},
+{
+  id: 'progressive-enhancement',
+  title: 'Progressive Enhancement'
+},
+{
+  id: '23425623467572',
+  title: 'Embers Verhältnis zu Progressive Enhancement ist&nbsp;schwierig.'
+},
+{
+  id: '34534634673456345',
+  title: '„Progressive Enhancement is dead.“',
+  subtitle: 'Tom Dale, 2013'
+},
+{
+  id: '234235236563465',
+  main:`
+  <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">My major complaint about progressive enhancement is it puts too much of a complexity burden on developers. If you get it for free, however…</p>&mdash; Tom Dale (@tomdale) <a href="https://twitter.com/tomdale/status/536222428771659776">November 22, 2014</a></blockquote>
+  `
+},
+{
+  id: '32423653463456345',
+  title: 'Progressive Enhancement (wie jedes Paradigma) ist in Ember.js nur realistisch umsetzbar, wenn von Haus aus unterstützt.'
+},
+{
+  id: 'performance',
+  title: 'Performance'
+},
+{
+  id: '234353463452',
+  title: 'Embers Verhältnis zu Performance ist&nbsp;schwierig.'
+},
+{
+  id: '533442362365',
+  main:`
+  <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Our goal is for people to take the Ember CLI apps they write today and have them &quot;just work&quot; for the SEO case.</p>&mdash; Tom Dale (@tomdale) <a href="https://twitter.com/tomdale/status/544582581237190657">December 15, 2014</a></blockquote>
+  `
+},
+{
+  id: '23426346234',
+  title: 'Der initiale Page-Load ist langsam',
+  main:`
+  <ul>
+    <li>JavaScript Payload</li>
+    <li>Client Side Templates</li>
+  </ul>
+  `
+},
+{
+  id: '23534634343',
+  title: 'Ein Performance Win stellt sich erst dann ein, wenn man die Seite als App betrachtet',
+  main:`
+  <ul>
+    <li>Initialer Page Load ≙ Installation</li>
+    <li>Robustes Caching</li>
+  </ul>
+  `
+},
+{
+  id: '323784964378',
+  title: 'Use Case: <a href="https://ghost.org/">Ghost</a> Admin Interface'
+},
+{
+  id: '234234546753',
+  title: 'Aber selbst da gilt: Schneller wäre&nbsp;besser!'
+},
+{
+  id: '534745784545',
+  title: 'Es spricht vieles dagegen,<br>Ember.js einzusetzen.'
+},
+{
+  id: '345745745764',
+  title: 'Es spricht <em>noch</em> vieles dagegen, Ember.js <em>im Produkt</em> einzusetzen.'
+},
+{
+  id: '534678843534',
+  title: 'Zukunftstechnologie'
+},
+{
+  id: '6234653455633',
+  main:'<iframe src="//giphy.com/embed/ySdvL3vICLowU" width="480" height="269" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+},
+{
+  id: 'isemberfastyet',
+  title: '<a href="https://www.isemberfastyet.com/">isemberfastyet.com</a>'
+},
+{
+  id: 'glimmer',
+  title: 'Glimmer',
+  subtitle: 'Von React inspirierte Renderingengine<br>mit unidirektionalem Datenfluss'
+},
+{
+  id: 'fastboot',
+  title: '<a href="https://github.com/tildeio/ember-cli-fastboot">FastBoot</a>'
+},
+{
+  id: '6346582354526',
+  title: 'Das initiale Rendering erfolgt auf dem Server in node.js'
+},
+{
+  id: '6845234637534',
+  title: 'FastBoot ≠ Meteor',
+  main: '<p>Serverseitiges Rendering bedeutet nicht, dass Ember.js das Backend stellt.</p><p>Eine FastBoot App ist immer noch Client einer API.</p>'
+},
+{
+  id: '323572334634',
+  main:`
+  <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Our goal is for people to take the Ember CLI apps they write today and have them &quot;just work&quot; for the SEO case.</p>&mdash; Tom Dale (@tomdale) <a href="https://twitter.com/tomdale/status/544582581237190657">December 15, 2014</a></blockquote>
+  `
+},
+{
+  id: 'beispiele',
+  title: 'Beispiele'
+},
+{
+  id: 'bustle',
+  title: '<a href="http://www.bustle.com/">bustle.com</a>'
+},
+{
+  id: 'discourse',
+  title: '<a href="http://try.discourse.org/">discourse.org</a>'
+},
+{
+  id: 'dockyard',
+  title: '<a href="http://dockyard.com/">dockyard.com</a>'
+},
+{
+  id: '645784623534',
+  title: 'Zum guten Schluss:'
+},
+{
   id: '02676077256',
   title: 'Users over authors over implementors over specifiers over theoretical purity.',
   subtitle: 'W3C HTML Design Principles'
@@ -311,8 +465,24 @@ const slides = [
   subtitle: 'W3C HTML Design Principles'
 },
 {
-  id: '45745845463',
-  title: 'Wenn du mit geringem Aufwand die Produktqualität ohne kritische Nachteile verbessern kannst, tu es.'
+  id: '266325733646',
+  title: '#Emberjs #FF',
+  main: `
+  <p>
+    <a href="https://twitter.com/emberjs">@emberjs</a>,
+    <a href="https://twitter.com/emberconf">@emberconf</a>,
+    <a href="https://twitter.com/tildeio">@tildeio</a>,
+    <a href="https://twitter.com/tomdale">@tomdale</a>,
+    <a href="https://twitter.com/wykatz">@wykatz</a>,
+    <a href="https://twitter.com/ebryn">@ebryn</a>,
+    <a href="https://twitter.com/dockyard">@dockyard</a>,
+    <a href="https://twitter.com/bcardarella">@bcardarella</a>
+  </p>
+  <p>Linktipps:<br>
+  <a href="https://www.youtube.com/watch?v=2b1vcg_XSR8">Test Driven Development Talk</a> von <a href="https://twitter.com/toranb">@toranb</a><br>
+  <a href="http://shoptalkshow.com/episodes/147-tom-dale/">ShopTalk Show Episode 147</a> mit <a href="https://twitter.com/tomdale">@tomdale</a>
+  </p>
+  `
 }
 ];
 
