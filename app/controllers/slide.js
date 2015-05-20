@@ -9,6 +9,13 @@ export default Ember.Controller.extend({
     let slides = this.get('model.slides');
     return slides.indexOf(slide) + 1;
   }.property('model.slides', 'model.slide'),
+  hasContent: function() {
+    return !(
+      this.get('model.slide.title') === undefined
+      && this.get('model.slide.subtitle') === undefined
+      && this.get('model.slide.main') === undefined
+    )
+  }.property('model.slide.title','model.slide.main','model.slide.code','model.slide.example'),
   titleOnly: function() {
     return (
       this.get('model.slide.title') !== undefined

@@ -1,5 +1,8 @@
+html {
+  font-size: 48px;
+}
+
 body {
-  font-size: 6vmin;
   line-height: 1.5em;
   font-family: "MarkCompPro-Medium", verdana, sans-serif;
   -webkit-font-feature-settings: "onum" 1;
@@ -8,7 +11,7 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.25em;
   padding-bottom: .25em;
   font-weight: normal;
@@ -16,7 +19,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.25em;
   padding-bottom: .25em;
   font-weight: normal;
@@ -36,10 +39,17 @@ a {
 
 ol,
 ul,
-blockquote {
+blockquote,
+pre {
   margin: 0;
   padding: 0;
   margin-bottom: .5em;
+}
+
+pre {
+  font-family: "Monaco",monospace;
+  font-size: .75rem;
+  line-height: 1.5em;
 }
 
 p,

@@ -1,11 +1,33 @@
-<article class="slide {{if titleOnly 'slide--title-only'}}" style="color: {{model.slide.color}}; background-color: {{model.slide.backgroundColor}};">
-  {{#if model.slide.title}}
-    <h1>{{{model.slide.title}}}</h1>
+<article class="slide" style="color: {{model.slide.color}}; background-color: {{model.slide.backgroundColor}};">
+
+  {{#if hasContent}}
+    <main class="slide__section slide__section--text {{if titleOnly 'slide__section--title-only'}}">
+      {{#if model.slide.title}}
+        <h1>{{{model.slide.title}}}</h1>
+      {{/if}}
+      {{#if model.slide.subtitle}}
+        <h2>{{{model.slide.subtitle}}}</h2>
+      {{/if}}
+      {{{model.slide.main}}}
+    </main>
   {{/if}}
-  {{#if model.slide.subtitle}}
-    <h2>{{{model.slide.subtitle}}}</h2>
+
+  {{#if model.slide.code}}
+    <section class="slide__section slide__section--code">
+      <pre class="code">{{model.slide.code}}</pre>
+    </section>
   {{/if}}
-  {{{model.slide.main}}}
+
+  {{#if model.slide.example}}
+    <section class="slide__section slide__section--example">
+    </section>
+  {{/if}}
+
+  {{#if model.slide.img}}
+    <section class="slide__section slide__section--img">
+    </section>
+  {{/if}}
+
   <nav class="nav--arrows">
     <button class="nav__button button--previous" {{action "previousSlide"}}>Previous</button>
     <button class="nav__button button--next" {{action "nextSlide"}}>Next</button>
