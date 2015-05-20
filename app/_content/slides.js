@@ -6,11 +6,19 @@ const slides = [
 },
 {
   id: '234523525',
-  title: '@<a href="https://twitter.com/fredericmarx" rel="me">fredericmarx</a>'
+  title: '@<a href="https://twitter.com/fredericmarx" rel="author">fredericmarx</a>'
+},
+{
+  id: '235634634',
+  title: 'Schnelleinstieg in die Entwicklung modularer Webapps mit <strike>ES6</strike> ES2015 und Ember.js'
+},
+{
+  id: '967345789',
+  title: 'Schnelleinstieg in die <em>Entwicklung modularer Webapps</em> mit <strike>ES6</strike> ES2015 und Ember.js'
 },
 {
   id: '235623464',
-  title: 'Was macht eine Website zur Web Application?'
+  title: 'Was macht eine Website zur Webapp?'
 },
 {
   id: '463474574',
@@ -62,7 +70,7 @@ const slides = [
   main:`
   <ul>
     <li>Bound Templates</li>
-    <li>Routing</li>
+    <li>Data Models</li>
   </ul>
   `
 },
@@ -72,8 +80,8 @@ const slides = [
   main:`
   <ul>
     <li>Bound Templates</li>
-    <li>Routing</li>
     <li>Data Models</li>
+    <li>Routing</li>
   </ul>
   `
 },
@@ -83,8 +91,8 @@ const slides = [
   main:`
   <ul>
     <li>Bound Templates</li>
-    <li>Routing</li>
     <li>Data Models</li>
+    <li>Routing</li>
     <li>API</li>
   </ul>
   `
@@ -131,24 +139,24 @@ const slides = [
 },
 {
   id: '74563457',
-  title: 'Infrastruktur',
+  title: 'Webapp Infrastruktur',
   main:`
   <ul>
     <li>Bound Templates</li>
-    <li>Routing</li>
     <li>Data Models</li>
+    <li>Routing</li>
     <li>API</li>
   </ul>
   `
 },
 {
   id: '34578456',
-  title: 'Infrastruktur',
+  title: 'Ember.js Infrastruktur',
   main:`
   <ul>
     <li>Bound Templates</li>
-    <li>Routing</li>
     <li>Data Models</li>
+    <li>Routing</li>
     <li>Softwarearchitektur</li>
     <li>Build Chain</li>
   </ul>
@@ -160,7 +168,61 @@ const slides = [
 },
 {
   id: 'clarke',
-  title: '„Any sufficiently advanced technology is indistinguishable from magic.“'
+  title: '„Any sufficiently advanced technology is indistinguishable from magic.“',
+  subtitle: 'Arthur C. Clarke'
+},
+{
+  id: 'binding1',
+  code:
+`
+<p>{{input type="text" value=name}}</p>
+<p>My name is {{name}} and I want to learn Ember!</p>
+`
+},
+{
+  id: '1231252362',
+  title: 'Bound Templates mit <strike>Handlebars</strike> Htmlbars'
+},
+{
+  id: '8456465734',
+  code:
+`
+// application.hbs
+
+<header></header>
+<main>{{outlet}}</main>
+<footer></footer>
+`
+},
+{
+  id: '234685646',
+  code:
+`
+// application.hbs
+// named outlets
+
+<header></header>
+<main>{{outlet 'main'}}</main>
+<aside>{{outlet 'sidebar'}}</aside>
+<footer></footer>
+`
+},
+{
+  id: '678579602',
+  code:
+`
+// articles.hbs
+<h1>Artikel</h1>
+{{outlet}}
+
+// articles/index.hbs
+<h2>Übersicht</h2>
+[ ... ]
+`
+},
+{
+  id: '945631795',
+  title: 'Bound Helpers'
 }
 ];
 

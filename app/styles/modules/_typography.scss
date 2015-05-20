@@ -37,8 +37,10 @@ a {
   }
 }
 
+p,
 ol,
 ul,
+li,
 blockquote,
 pre {
   margin: 0;
@@ -46,15 +48,15 @@ pre {
   margin-bottom: .5em;
 }
 
+em {
+  font-style: normal;
+  color: $cl-highlight;
+}
+
 pre {
   font-family: "Monaco",monospace;
   font-size: .75rem;
-  line-height: 1.5em;
-}
-
-p,
-li {
-  margin-bottom: .5em;
+  line-height: 1.75em;
 }
 
 li {
