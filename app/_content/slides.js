@@ -157,8 +157,8 @@ const slides = [
     <li>Bound Templates</li>
     <li>Data Models</li>
     <li>Routing</li>
-    <li>Softwarearchitektur</li>
-    <li>Build Chain</li>
+    <li>Anwendungsarchitektur</li>
+    <li>Build Tools</li>
   </ul>
   `
 },
@@ -180,14 +180,13 @@ const slides = [
 `
 },
 {
-  id: '1231252362',
+  id: 'templates',
   title: 'Bound Templates mit <strike>Handlebars</strike> Htmlbars'
 },
 {
   id: '8456465734',
   code:
-`
-// application.hbs
+`// application.hbs
 
 <header></header>
 <main>{{outlet}}</main>
@@ -197,8 +196,7 @@ const slides = [
 {
   id: '234685646',
   code:
-`
-// application.hbs
+`// application.hbs
 // named outlets
 
 <header></header>
@@ -208,21 +206,99 @@ const slides = [
 `
 },
 {
-  id: '678579602',
+  id: '07883658445',
+  title: 'Nested Templates'
+},
+{
+  id: '9346845623',
   code:
+`// articles.hbs
+<h1>Artikel</h1>
+{{outlet}}
 `
-// articles.hbs
+},
+{
+  id: '93465892674',
+  code:
+`// articles.hbs
 <h1>Artikel</h1>
 {{outlet}}
 
 // articles/index.hbs
 <h2>Übersicht</h2>
-[ ... ]
 `
 },
 {
-  id: '945631795',
-  title: 'Bound Helpers'
+  id: '9128946838',
+  code:
+`// articles.hbs
+<h1>Artikel</h1>
+{{outlet}}
+
+// articles/index.hbs
+<h2>Übersicht</h2>
+
+// articles/article.hbs
+<h2>{{title}}</h2>
+`
+},
+{
+  id: 'helpers',
+  title: 'Helpers'
+},
+{
+  id: '7234765734345',
+  code:
+`// Outlet Helper
+{{outlet}}
+
+// Action Helper
+<button {{action 'actionName'}}>
+  click me
+</button>
+
+// Input Helper
+{{input value="Test"}}`
+},
+{
+  id: '874562346477',
+  code:
+`// If helper
+
+{{#if person}}
+  Willkommen zurück, {{person.name}}!
+{{else}}
+  Kennen wir uns?
+{{/if}}
+`
+},
+{
+  id: '745234637345',
+  code:
+`// Each helper
+
+{{#each person in developers}}
+  {{person.name}}
+{{else}}
+  Keine Personen vorhanden
+{{/each}}
+`
+},
+{
+  id: '257238703423',
+  title: 'Anwendungslogik mit Helpern implementieren ist keine gute Idee.'
+},
+{
+  id: 'custom-helpers',
+  title: 'Custom Helpers'
+},
+{
+  id: '98883870248',
+  title: 'Wiederverwendbare Einwegtransformationen auf Templateebene'
+},
+{
+  id: 'components',
+  title: 'Components'
 }
 ];
 
