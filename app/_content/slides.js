@@ -113,7 +113,7 @@ const slides = [
 },
 {
   id: '12344346',
-  title: '„Aber Frameworks sind böse!“',
+  title: 'Frameworks considered harmful!',
 },
 {
   id: '85673456',
@@ -258,7 +258,7 @@ const slides = [
 </button>
 
 // Input Helper
-{{input value="Test"}}`
+{{input value='Test'}}`
 },
 {
   id: '874562346477',
@@ -277,7 +277,7 @@ const slides = [
   code:
 `// Each helper
 
-{{#each person in developers}}
+{{#each person}}
   {{person.name}}
 {{else}}
   Keine Personen vorhanden
@@ -299,6 +299,20 @@ const slides = [
 {
   id: 'components',
   title: 'Components'
+},
+{
+  id: '02676077256',
+  title: 'Users over authors over implementors over specifiers over theoretical purity.',
+  subtitle: 'W3C HTML Design Principles'
+},
+{
+  id: '263679563683',
+  title: '<em>Users</em> over authors <em>over implementors</em> over specifiers <em>over theoretical purity.</em>',
+  subtitle: 'W3C HTML Design Principles'
+},
+{
+  id: '45745845463',
+  title: 'Wenn du mit geringem Aufwand die Produktqualität ohne kritische Nachteile verbessern kannst, tu es.'
 }
 ];
 
