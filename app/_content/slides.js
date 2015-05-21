@@ -29,12 +29,6 @@ const slides = [
   `
 },
 {
-  id: '23423562',
-  main:`
-  <blockquote ><p>If you’re OK putting all your eggs in a single point-of-failure basket, use Ember.</p>&mdash; Jeremy Keith (@adactio) <a href="https://twitter.com/zeldman/status/582943520714948608">Mar 31, 2015</a></blockquote>
-  `
-},
-{
   id: '34685678',
   main:`
   <blockquote ><p>Tools don’t solve problems any more, they have become the problem.</p>&mdash; PPK (@ppk) <a href="http://www.quirksmode.org/blog/archives/2015/05/tools_dont_solv.html">May 14, 2015</a></blockquote>
@@ -151,6 +145,10 @@ const slides = [
 `
 },
 {
+  id: 'render',
+  title: 'Ember.js verfolgt das Prinzip des DOM-Diffing Rendering'
+},
+{
   id: 'helpers',
   title: 'Helpers'
 },
@@ -203,6 +201,19 @@ const slides = [
 {
   id: '98883870248',
   title: 'Wiederverwendbare Einwegtransformationen auf Templateebene'
+},
+{
+  id: '396868997263',
+  main: `
+<p>Helper sind Web Components für Arme.</p>
+`
+},
+{
+  id: '999476662245',
+  main: `
+<p>Helper sind Web Components für Arme.</p>
+<p>Components sind Helper mit Superkräften.</p>
+`
 },
 {
   id: 'components',
@@ -278,11 +289,26 @@ longitude="-122.41942"}}`
   title: 'Aha-Erlebnis 2:',
   main:`
   <p>(Ember) Components müssen nicht sichtbar gerendert werden.</p>
-  <p>Sie eignen sich auch zum deklarativen Einbinden von Code in einen View</p>
+  <p>Sie eignen sich auch zum deklarativen Einbinden von Funktionalität in einen View.</p>
   `
 },
 {
   id: '655783364433684',
+  code:
+`// application.hbs
+{{my-hotkey action="skipSong" key="39"}}`
+},
+{
+  id: '027973683826284',
+  code:
+`// application.hbs
+{{my-hotkey action="skipSong" key="39"}}
+
+// components/my-hotkey.js
+init: function() { ... }`
+},
+{
+  id: '01874792917491',
   code:
 `// application.hbs
 {{my-hotkey action="skipSong" key="39"}}
@@ -382,6 +408,12 @@ actions: {
   `
 },
 {
+  id: '23423562',
+  main:`
+  <blockquote ><p>If you’re OK putting all your eggs in a single point-of-failure basket, use Ember.</p>&mdash; Jeremy Keith (@adactio) <a href="https://twitter.com/zeldman/status/582943520714948608">Mar 31, 2015</a></blockquote>
+  `
+},
+{
   id: '234235236563465',
   main:`
   <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">My major complaint about progressive enhancement is it puts too much of a complexity burden on developers. If you get it for free, however…</p>&mdash; Tom Dale (@tomdale) <a href="https://twitter.com/tomdale/status/536222428771659776">November 22, 2014</a></blockquote>
@@ -407,7 +439,7 @@ actions: {
     <li>Dashboard-Anwendung</li>
     <li>Bestehende RESTful API</li>
     <li>Fluktuation im Entwicklungsteam</li>
-    <li>Wenig Ressourcen für Anwendungsarchitektur</li>
+    <li>Wenig Zeit oder Kapazitäten für Anwendungsarchitektur</li>
   </ul>
   `
 },
@@ -458,7 +490,7 @@ actions: {
 },
 {
   id: 'es2015',
-  title: 'Spielwiese für ES2015'
+  title: 'Spielwiese für <strike>ES6</strike> ES2015'
 },
 {
   id: '456745868456722',
