@@ -53,7 +53,7 @@ em {
   color: $cl-highlight;
 }
 
-pre {
+.code {
   font-family: "Monaco",monospace;
   font-size: .75rem;
   line-height: 1.75em;
@@ -61,4 +61,8 @@ pre {
 
 li {
   margin-left: 1em;
+}
+
+footer {
+  margin-top: 1em;
 }

@@ -374,6 +374,36 @@ longitude="-122.41942"}}`
   `
 },
 {
+  id: '655783364433684',
+  code:
+`// application.hbs
+{{my-hotkey action="skipSong" key="39"}}
+
+// components/my-hotkey.js
+init: function() { ... }
+
+// controllers/application.js
+actions: {
+  nextSlide: function() { ... }
+}`
+},
+{
+  id: 'routing',
+  title: 'Routing'
+},
+{
+  id: 'architektur',
+  title: 'Anwendungsarchitektur'
+},
+{
+  id: '784563456345',
+  title: 'Convention over Configuration'
+},
+{
+  id: 'data',
+  title: 'Data Models'
+},
+{
   id: 'ember-way',
   title: 'The Ember Way'
 },
@@ -580,8 +610,8 @@ promise.then(onSuccess, onFail)`
   title: 'Beispiele'
 },
 {
-  id: 'bustle',
-  title: '<a href="http://www.bustle.com/">bustle.com</a>'
+  id: 'ghost',
+  title: '<a href="https://ghost.org/">Ghost Admin UI</a>'
 },
 {
   id: 'discourse',

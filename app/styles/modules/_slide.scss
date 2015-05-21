@@ -4,9 +4,9 @@
   background-color: $cl-background;
   color: white;
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 
   @media (min-width: 60rem) {
     flex-direction: row;
