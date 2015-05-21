@@ -11,18 +11,18 @@ export default Ember.Controller.extend({
   }.property('model.slides', 'model.slide'),
   hasContent: function() {
     return !(
-      this.get('model.slide.title') === undefined
-      && this.get('model.slide.subtitle') === undefined
-      && this.get('model.slide.main') === undefined
-    )
+      this.get('model.slide.title') === undefined &&
+      this.get('model.slide.subtitle') === undefined &&
+      this.get('model.slide.main') === undefined
+    );
   }.property('model.slide.title','model.slide.main','model.slide.code','model.slide.example'),
   titleOnly: function() {
     return (
-      this.get('model.slide.title') !== undefined
-      && this.get('model.slide.main') === undefined
-      && this.get('model.slide.code') === undefined
-      && this.get('model.slide.example') === undefined
-    )
+      this.get('model.slide.title') !== undefined &&
+      this.get('model.slide.main') === undefined &&
+      this.get('model.slide.code') === undefined &&
+      this.get('model.slide.example') === undefined
+    );
   }.property('model.slide.title','model.slide.main','model.slide.code','model.slide.example'),
   actions: {
     nextSlide: function() {
@@ -30,7 +30,7 @@ export default Ember.Controller.extend({
       let slides = this.get('model.slides');
       let nextSlide = slides.indexOf(slide) + 1;
       if(slides.objectAt(nextSlide)) {
-        this.transitionToRoute('slide', slides.objectAt(nextSlide).get('id'))
+        this.transitionToRoute('slide', slides.objectAt(nextSlide).get('id'));
       }
     },
     previousSlide: function() {
@@ -38,7 +38,7 @@ export default Ember.Controller.extend({
       let slides = this.get('model.slides');
       let previousSlide = slides.indexOf(slide) - 1;
       if(slides.objectAt(previousSlide)) {
-        this.transitionToRoute('slide', slides.objectAt(previousSlide).get('id'))
+        this.transitionToRoute('slide', slides.objectAt(previousSlide).get('id'));
       }
     }
   }
