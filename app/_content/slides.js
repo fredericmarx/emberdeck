@@ -195,6 +195,15 @@ const slides = [
 `
 },
 {
+  id: '745234637345',
+  code:
+`// String encoded output
+{{myString}}
+
+// Html output
+{{{myString}}}`
+},
+{
   id: '257238703423',
   title: 'Anwendungslogik mit Helpern implementieren ist keine gute Idee.'
 },
@@ -372,10 +381,6 @@ actions: {
   title: 'router.js, die .htaccess der Ember.js&nbsp;App'
 },
 {
-  id: '34567967348948',
-  title: 'ember g route'
-},
-{
   id: '88846746766342',
   code:
 `// router.js
@@ -421,6 +426,45 @@ export default Ember.Route.extend({
   title: 'Ember CLI verdrahtet anhand von Namenskonventionen automatisch Models, Routen und Controller'
 },
 {
+  id: 'data',
+  title: 'Data Models'
+},
+{
+  id: '6345645645345',
+  title: 'API → Ember.js'
+},
+{
+  id: '6734523534345345',
+  title: 'API → Adapter → Serializer → EmberData → Ember.js'
+},
+{
+  id: '3457654345345346',
+  title: 'API ← Adapter ← Serializer ← EmberData ← Ember.js'
+},
+{
+  id: 'ds-model',
+  title: 'DS.Model'
+},
+{
+  id: '6323434634958',
+  code:
+`// models/user.js
+import DS from 'ember-data';
+
+export default DS.Model.extend({
+  name: DS.attr('string'),
+  verified: attr('boolean', {defaultValue: false}),
+  born: DS.attr('date'),
+  age: function() {
+    // ...
+  }.property('birthday')
+});`
+},
+{
+  id: '246927608946275',
+  title: 'Häufig benötigte Transformationen als computed properties abspeichern'
+},
+{
   id: 'controller',
   title: 'Controller'
 },
@@ -439,22 +483,6 @@ export default Ember.Controller.extend({
     saveArticle: function() {}
   }
 });`
-},
-{
-  id: 'data',
-  title: 'Data Models'
-},
-{
-  id: '6345645645345',
-  title: 'API → Ember.js'
-},
-{
-  id: '6734523534345345',
-  title: 'API → Adapter → Serializer → EmberData → Ember.js'
-},
-{
-  id: '3457654345345346',
-  title: 'API ← Adapter ← Serializer ← EmberData ← Ember.js'
 },
 {
   id: 'architektur',
@@ -500,6 +528,25 @@ export default Ember.Controller.extend({
 },
 {
   id: '34534345345345345',
+  main:
+  `<ul>
+    <li>Ember Generator</li>
+  </ul>`
+},
+{
+  id: '34567967348948',
+  title: 'ember new myapp'
+},
+{
+  id: '463426805836834',
+  title: 'ember g route articles'
+},
+{
+  id: '63462398363453',
+  title: 'ember g component my-navigation'
+},
+{
+  id: '543789679553278952',
   main:
   `<ul>
     <li>Ember Generator</li>
