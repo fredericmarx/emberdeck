@@ -9,95 +9,6 @@ const slides = [
   title: '@<a href="https://twitter.com/fredericmarx" rel="author">fredericmarx</a>'
 },
 {
-  id: '235634634',
-  title: 'Schnelleinstieg in die Entwicklung modularer Webapps mit <strike>ES6</strike> ES2015 und Ember.js'
-},
-{
-  id: '967345789',
-  title: 'Schnelleinstieg in die <em>Entwicklung modularer Webapps</em> mit <strike>ES6</strike> ES2015 und Ember.js'
-},
-{
-  id: '235623464',
-  title: 'Was macht eine Website zur Webapp?'
-},
-{
-  id: '463474574',
-  title: 'UX',
-  main: `
-  <ul>
-  </ul>
-  `
-},
-{
-  id: '235626784',
-  title: 'UX',
-  main:`
-  <ul>
-    <li>Input / Output</li>
-  </ul>
-  `
-},
-{
-  id: '2647856774',
-  title: 'UX',
-  main:`
-  <ul>
-    <li>Input / Output</li>
-    <li>Asynchronität</li>
-  </ul>
-  `
-},
-{
-  id: '2352352367',
-  title: 'Infrastruktur',
-  main:`
-  <ul>
-  </ul>
-  `
-},
-{
-  id: '6345673775',
-  title: 'Infrastruktur',
-  main:`
-  <ul>
-    <li>Bound Templates</li>
-  </ul>
-  `
-},
-{
-  id: '534634673',
-  title: 'Infrastruktur',
-  main:`
-  <ul>
-    <li>Bound Templates</li>
-    <li>Data Models</li>
-  </ul>
-  `
-},
-{
-  id: '12412451',
-  title: 'Infrastruktur',
-  main:`
-  <ul>
-    <li>Bound Templates</li>
-    <li>Data Models</li>
-    <li>Routing</li>
-  </ul>
-  `
-},
-{
-  id: '23464673',
-  title: 'Infrastruktur',
-  main:`
-  <ul>
-    <li>Bound Templates</li>
-    <li>Data Models</li>
-    <li>Routing</li>
-    <li>API</li>
-  </ul>
-  `
-},
-{
   id: '643523424',
   main:`
   <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">web developer (n)&#10;&#10;Someone who is paid to repeatedly reimplement a web browser in JavaScript to avoid page reloads.</p>&mdash; Ross Penman (@PenmanRoss) <a href="https://twitter.com/PenmanRoss/status/579778675865993216">March 22, 2015</a></blockquote>
@@ -106,10 +17,6 @@ const slides = [
 {
   id: '123123144',
   main:'<iframe src="//giphy.com/embed/jGa1qMM9EM944" width="480" height="314" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
-},
-{
-  id: '45745678',
-  title: 'Deswegen gibt es Frameworks.',
 },
 {
   id: '12344346',
@@ -145,7 +52,7 @@ const slides = [
     <li>Bound Templates</li>
     <li>Data Models</li>
     <li>Routing</li>
-    <li>API</li>
+    <li>REST Schnittstelle</li>
   </ul>
   `
 },
@@ -157,6 +64,7 @@ const slides = [
     <li>Bound Templates</li>
     <li>Data Models</li>
     <li>Routing</li>
+    <li>REST Schnittstelle</li>
     <li>Anwendungsarchitektur</li>
     <li>Build Tools</li>
   </ul>
