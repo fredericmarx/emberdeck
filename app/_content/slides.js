@@ -228,6 +228,10 @@ export default Ember.HTMLBars.makeBoundHelper(myDate);`
   example: 'example-markdown'
 },
 {
+  id: '23546345345345',
+  title: 'UX-Win von Bound Helpers: Unmittelbares Feedback bei komplexen Zusammenhängen'
+},
+{
   id: '396868997263',
   main: `
 <p>Helper sind Web Components für Arme.</p>
@@ -364,16 +368,148 @@ actions: {
   title: 'Routing'
 },
 {
-  id: 'architektur',
-  title: 'Anwendungsarchitektur'
+  id: '8456467543433455',
+  title: 'router.js, die .htaccess der Ember.js&nbsp;App'
+},
+{
+  id: '34567967348948',
+  title: 'ember g route'
+},
+{
+  id: '88846746766342',
+  code:
+`// router.js
+import Ember from 'ember';
+
+Router.map(function() {
+  this.resource('articles', function() {
+    this.resource('article', { path: '/:article_id'}, function() {
+      this.route('edit')
+    });
+  });
+});
+
+export default Router;`
+},
+{
+  id: '456457457456',
+  title: 'Resource: Nomen, Route: Verb'
+},
+{
+  id: '845763252354753',
+  code:
+`// routes/article.js
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+  model: function(params) {
+    // Ember Data
+    this.store.find('slide', params.article_id);
+  }
+});`
+},
+{
+  id: '8457345723452934',
+  title: 'Die Route ist der Ort für Initialisierung des Models, Weiterleitung,&nbsp;etc.'
 },
 {
   id: '784563456345',
   title: 'Convention over Configuration'
 },
 {
+  id: '5645786789664545',
+  title: 'Ember CLI verdrahtet anhand von Namenskonventionen automatisch Models, Routen und Controller'
+},
+{
+  id: 'controller',
+  title: 'Controller'
+},
+{
+  id: '34534634545234234',
+  title: 'Anwendungslogik und lokale Variablen für den View'
+},
+{
+  id: '67896442345234234',
+  code:
+`// controllers/article/edit.js
+import Ember from 'ember';
+
+export default Ember.Controller.extend({
+  actions: {
+    saveArticle: function() {}
+  }
+});`
+},
+{
   id: 'data',
   title: 'Data Models'
+},
+{
+  id: '6345645645345',
+  title: 'API → Ember.js'
+},
+{
+  id: '6734523534345345',
+  title: 'API → Adapter → Serializer → EmberData → Ember.js'
+},
+{
+  id: '3457654345345346',
+  title: 'API ← Adapter ← Serializer ← EmberData ← Ember.js'
+},
+{
+  id: 'architektur',
+  title: 'Anwendungsarchitektur'
+},
+{
+  id: '645487456345464456',
+  main:
+  `<ul>
+    <li>app</li>
+    <li>bower_components</li>
+    <li>config</li>
+    <li>dist</li>
+    <li>node_modules</li>
+    <li>tests</li>
+  </ul>`
+},
+{
+  id: '96834635372350ß',
+  main:
+  `<ul>
+    <li>app
+      <ul>
+        <li>adapters</li>
+        <li>components</li>
+        <li>controllers</li>
+        <li>models</li>
+        <li>serializers</li>
+        <li>templates</li>
+        <li>index.html</li>
+        <li>router.js</li>
+      </ul>
+    </li>
+  </ul>`
+},
+{
+  id: '34534763452344',
+  title: 'Optional: Pods'
+},
+{
+  id: 'cli',
+  title: 'Ember CLI'
+},
+{
+  id: '34534345345345345',
+  main:
+  `<ul>
+    <li>Ember Generator</li>
+    <li>Module Resolver</li>
+    <li>babel.js</li>
+    <li>Broccoli</li>
+    <li>Testing</li>
+    <li>Linting</li>
+    <li>Live Reload</li>
+  </ul>`
 },
 {
   id: 'ember-way',
@@ -385,7 +521,7 @@ actions: {
 },
 {
   id: '2346457823526',
-  title: 'You should be using open source projects that align with your interests.',
+  title: 'You should be using open source projects that align with your&nbsp;interests.',
   subtitle: 'Tom Dale'
 },
 {
@@ -406,7 +542,7 @@ actions: {
   main:`
   <p>Ember hat den Ruf, monolithisch zu sein.</p>
   <p>Dabei handelt es sich um eine sorgfältig abgestimmte Sammlung von unabhängigen Modulen.</p>
-  <p>Neue Module hinzufügen ist leicht, bestehende austauschen oft schwierig</p>
+  <p>Neue Module hinzuzufügen ist leicht, bestehende auszutauschen oft schwierig</p>
   `
 },
 {
