@@ -69,6 +69,10 @@ const slides = [
   main:'<iframe src="//giphy.com/embed/n0WvhHFTpihk4" width="480" height="274" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
 },
 {
+  id: 'gravatar',
+  example: 'my-gravatar'
+},
+{
   id: 'clarke',
   title: '„Any sufficiently advanced technology is indistinguishable from magic.“',
   subtitle: 'Arthur C. Clarke'
@@ -237,7 +241,7 @@ const slides = [
   main: `
 <p>Kernfeature für gekapselte, wiederverwendbare Einzelkomponenten in&nbsp;Ember.js</p>
 <p>Besitzen Template und Controller</p>
-<p>Sind im Gegensatz zu Helpern stateful, asynchron und interaktiv</p>
+<p>Können Gegensatz zu Helpern stateful, asynchron und interaktiv sein</p>
 `
 },
 {
@@ -289,7 +293,7 @@ longitude="-122.41942"}}`
   title: 'Aha-Erlebnis 2:',
   main:`
   <p>(Ember) Components müssen nicht sichtbar gerendert werden.</p>
-  <p>Sie eignen sich auch zum deklarativen Einbinden von Funktionalität in einen View.</p>
+  <p>Sie eignen sich auch zum deklarativen Einbinden von Funktionalität in einen View (zum Beispiel um auf Events zu reagieren).</p>
   `
 },
 {
@@ -320,6 +324,19 @@ init: function() { ... }
 actions: {
   nextSlide: function() { ... }
 }`
+},
+{
+  id: '88364787362378599',
+  main:`
+  <p>Komponenten haben standardmäßig keinen Zugriff auf ihren Kontext.</p>
+  <p>Dieser kann aber als Property übergeben werden.</p>
+  `
+},
+{
+  id: '3355335535643',
+  code:
+`// application.hbs
+{{my-event action="someAction" context=myView}}`
 },
 {
   id: 'routing',
@@ -531,6 +548,12 @@ promise.then(onSuccess, onFail)`
   `
 },
 {
+  id: '8456903123344',
+  main:`
+  <blockquote lang="en"><p>If it’s not curlable, it’s not on the web.</p>&mdash; Tantek Çelik (@t) <a href="http://tantek.com/2015/069/t1/js-dr-javascript-required-dead">Mar 11, 2015</a></blockquote>
+  `
+},
+{
   id: '6346582354526',
   title: 'Das initiale Rendering erfolgt auf dem Server in node.js'
 },
@@ -541,7 +564,7 @@ promise.then(onSuccess, onFail)`
 },
 {
   id: 'beispiele',
-  title: 'Beispiele'
+  title: 'Beispiele für Ember.js Anwendungen'
 },
 {
   id: 'ghost',
