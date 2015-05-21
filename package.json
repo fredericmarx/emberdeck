@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "MD5": "^1.2.2",
-    "moment": "^2.10.3"
+    "moment": "^2.10.3",
+    "showdown": "^1.0.0-alpha.2"
   }
 }

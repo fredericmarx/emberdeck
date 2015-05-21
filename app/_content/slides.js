@@ -224,6 +224,10 @@ export function myDate() {
 export default Ember.HTMLBars.makeBoundHelper(myDate);`
 },
 {
+  id: 'example-markdown',
+  example: 'example-markdown'
+},
+{
   id: '396868997263',
   main: `
 <p>Helper sind Web Components für Arme.</p>

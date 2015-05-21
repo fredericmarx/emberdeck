@@ -1,9 +1,9 @@
-.row {
-  display: flex;
+.grid {
+  display: none;
 }
 
-.col {
+.column {
   flex-grow: 1;
   flex-basis: 100%;
-  padding: 1rem;
+  padding: .25rem;
 }

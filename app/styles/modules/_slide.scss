@@ -19,10 +19,7 @@
   padding: 10vmin 6vmin;
 
   &--example {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
   }
 
   &--title-only {
@@ -31,4 +28,12 @@
     justify-content: center;
     text-align: center;
   }
+}
+
+.center-all {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
