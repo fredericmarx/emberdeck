@@ -66,3 +66,19 @@ li {
 footer {
   margin-top: 1em;
 }
+
+input {
+  background: none;
+  border-radius: .2em;
+  border: 2px solid rgba(white, .5);
+  padding: .5em;
+  font-family: inherit;
+  color: inherit;
+  font-size: .85em;
+  width: 15em;
+
+  &:focus {
+    outline: none;
+    border-color: $cl-cyan;
+  }
+}
