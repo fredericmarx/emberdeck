@@ -572,7 +572,7 @@ export default Ember.Controller.extend({
 },
 {
   id: '97834757345856',
-  title: 'ember build --production'
+  title: 'ember build --environment=production'
 },
 {
   id: 'ember-way',
