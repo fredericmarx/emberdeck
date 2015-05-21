@@ -450,6 +450,14 @@ export default Ember.Route.extend({
   title: 'API ← Adapter ← Serializer ← EmberData ← Ember.js'
 },
 {
+  id: '45345346346345345',
+  title: 'No-Backend offline first mit Ember.js'
+},
+{
+  id: '45664564564543455',
+  title: 'CouchDB ◇ PouchDB → Adapter → Serializer → EmberData → Ember.js'
+},
+{
   id: 'ds-model',
   title: 'DS.Model'
 },
@@ -572,7 +580,7 @@ export default Ember.Controller.extend({
 },
 {
   id: '97834757345856',
-  title: 'ember build --environment=production'
+  title: 'ember build<br>--environment=production'
 },
 {
   id: 'ember-way',
