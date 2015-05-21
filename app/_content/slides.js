@@ -9,6 +9,10 @@ const slides = [
   title: '@<a href="https://twitter.com/fredericmarx" rel="author">fredericmarx</a>'
 },
 {
+  id: '34657456345345',
+  title: 'Frameworks'
+},
+{
   id: '643523424',
   main:`
   <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">web developer (n)&#10;&#10;Someone who is paid to repeatedly reimplement a web browser in JavaScript to avoid page reloads.</p>&mdash; Ross Penman (@PenmanRoss) <a href="https://twitter.com/PenmanRoss/status/579778675865993216">March 22, 2015</a></blockquote>
@@ -63,6 +67,10 @@ const slides = [
     <li>Build Tools</li>
   </ul>
   `
+},
+{
+  id: '3463452347246',
+  title: 'Beeindruckt?'
 },
 {
   id: 'magic',
@@ -149,6 +157,15 @@ const slides = [
 `
 },
 {
+  id: '9682646944876',
+  code:
+`// String encoded output
+{{myString}}
+
+// Html output
+{{{myString}}}`
+},
+{
   id: 'render',
   title: 'Ember.js verfolgt das Prinzip des DOM-Diffing Rendering'
 },
@@ -193,15 +210,6 @@ const slides = [
   Keine Personen vorhanden
 {{/each}}
 `
-},
-{
-  id: '745234637345',
-  code:
-`// String encoded output
-{{myString}}
-
-// Html output
-{{{myString}}}`
 },
 {
   id: '257238703423',
@@ -557,6 +565,14 @@ export default Ember.Controller.extend({
     <li>Linting</li>
     <li>Live Reload</li>
   </ul>`
+},
+{
+  id: '496784759345445',
+  title: 'ember build'
+},
+{
+  id: '97834757345856',
+  title: 'ember build --production'
 },
 {
   id: 'ember-way',
