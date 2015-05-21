@@ -600,12 +600,6 @@ promise.then(onSuccess, onFail)`
   main: '<p>Serverseitiges Rendering bedeutet nicht, dass Ember.js das Backend stellt.</p><p>Eine FastBoot App ist immer noch Client einer API.</p>'
 },
 {
-  id: '323572334634',
-  main:`
-  <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Our goal is for people to take the Ember CLI apps they write today and have them &quot;just work&quot; for the SEO case.</p>&mdash; Tom Dale (@tomdale) <a href="https://twitter.com/tomdale/status/544582581237190657">December 15, 2014</a></blockquote>
-  `
-},
-{
   id: 'beispiele',
   title: 'Beispiele'
 },
