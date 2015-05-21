@@ -207,6 +207,10 @@ const slides = [
   title: 'Wiederverwendbare Einwegtransformationen auf Templateebene'
 },
 {
+  id: 'example-helper',
+  example: 'example-helper'
+},
+{
   id: '396868997263',
   main: `
 <p>Helper sind Web Components für Arme.</p>
