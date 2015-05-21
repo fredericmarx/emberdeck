@@ -211,6 +211,19 @@ const slides = [
   example: 'example-helper'
 },
 {
+  id: '90238970458476662',
+  code:
+`import Ember from 'ember';
+import moment from 'npm:moment'; // ember-browserify
+
+export function myDate() {
+  return moment(this.get('date'))
+  .format('dddd, MMM Do YYYY');
+}
+
+export default Ember.HTMLBars.makeBoundHelper(myDate);`
+},
+{
   id: '396868997263',
   main: `
 <p>Helper sind Web Components für Arme.</p>
