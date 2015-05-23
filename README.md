@@ -1,53 +1,23 @@
 # Emberdeck
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a **highly** experimental proof of concept for creating a slideshow with Ember.js that I built for use at the [Webworker NRW] (http://webworker-nrw.de/) meetup.
 
-## Prerequisites
+## Nützliche Links
 
-You will need the following things properly installed on your computer.
+[emberaddons.com](http://www.emberaddons.com)
+[Eloquent Javascript](http://eloquentjavascript.net/) von [@marijnjh](https://twitter.com/marijnjh)  
+[Test Driven Development Talk](https://www.youtube.com/watch?v=2b1vcg_XSR8) von [@toranb](https://twitter.com/toranb)  
+[ShopTalk Show Episode 147](http://shoptalkshow.com/episodes/147-tom-dale/) mit [@tomdale](https://twitter.com/tomdale)
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+### Twitter Accounts zum Thema Ember.js
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* [@emberjs](https://twitter.com/emberjs)
+* [@emberconf](https://twitter.com/emberconf)
+* [@tildeio](https://twitter.com/tildeio)
+* [@tomdale](https://twitter.com/tomdale)
+* [@wykatz](https://twitter.com/wykatz)
+* [@ebryn](https://twitter.com/ebryn)
+* [@stefanpenner](https://twitter.com/stefanpenner)
+* [@dockyard](https://twitter.com/dockyard)
+* [@bcardarella](https://twitter.com/bcardarella)
 
