@@ -4,12 +4,18 @@ This is a **highly** experimental proof of concept for creating a slideshow with
 
 ## Nützliche Links
 
-[emberaddons.com](http://www.emberaddons.com)
-[Eloquent Javascript](http://eloquentjavascript.net/) von [@marijnjh](https://twitter.com/marijnjh)  
-[Test Driven Development Talk](https://www.youtube.com/watch?v=2b1vcg_XSR8) von [@toranb](https://twitter.com/toranb)  
-[ShopTalk Show Episode 147](http://shoptalkshow.com/episodes/147-tom-dale/) mit [@tomdale](https://twitter.com/tomdale)
+* [emberaddons.com](http://www.emberaddons.com)
+* [Eloquent Javascript](http://eloquentjavascript.net/) von [@marijnjh](https://twitter.com/marijnjh)  
+* [Test Driven Development Talk](https://www.youtube.com/watch?v=2b1vcg_XSR8) von [@toranb](https://twitter.com/toranb)  
+* [ShopTalk Show Episode 147](http://shoptalkshow.com/episodes/147-tom-dale/) mit [@tomdale](https://twitter.com/tomdale)
 
-### Twitter Accounts zum Thema Ember.js
+## Beispiele für Ember.js Apps aus der Präsentation
+
+* [Ghost](https://ghost.org/) Backend
+* [discourse.org](http://try.discourse.org/)
+* [dockyard.com](http://dockyard.com/)
+
+## Twitter Accounts zum Thema Ember.js
 
 * [@emberjs](https://twitter.com/emberjs)
 * [@emberconf](https://twitter.com/emberconf)
