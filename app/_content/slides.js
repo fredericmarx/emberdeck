@@ -852,7 +852,11 @@ export default Ember.Controller.extend({
   </small></p>
   </footer>
   `
-}
+},
+{
+  id: 'links-2',
+  main: '<p><a href="https://github.com/fredericmarx/emberdeck">github.com/fredericmarx/emberdeck</a></p><p><a href="https://twitter.com/fredericmarx">@fredericmarx</a></p>'
+},
 ];
 
 export default slides;
