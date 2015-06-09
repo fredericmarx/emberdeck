@@ -5,7 +5,6 @@ This is a **highly** experimental proof of concept for creating a slideshow with
 ## Nützliche Links
 
 * [emberaddons.com](http://www.emberaddons.com)
-* [Eloquent Javascript](http://eloquentjavascript.net/) von [@marijnjh](https://twitter.com/marijnjh)  
 * [Test Driven Development Talk](https://www.youtube.com/watch?v=2b1vcg_XSR8) von [@toranb](https://twitter.com/toranb)  
 * [ShopTalk Show Episode 147](http://shoptalkshow.com/episodes/147-tom-dale/) mit [@tomdale](https://twitter.com/tomdale)
 

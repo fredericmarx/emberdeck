@@ -2,7 +2,7 @@ const slides = [
 
 {
   id: '1',
-  title: 'Ember.js: Die&nbsp;größten Stützräder der&nbsp;Welt'
+  title: 'Ember.js: Old hamster, new tricks'
 },
 {
   id: '234523525',
@@ -67,10 +67,6 @@ const slides = [
     <li>Build Tools</li>
   </ul>
   `
-},
-{
-  id: '3463452347246',
-  title: 'Beeindruckt?'
 },
 {
   id: 'magic',
@@ -167,7 +163,7 @@ const slides = [
 },
 {
   id: 'render',
-  title: 'Ember.js verfolgt das Prinzip des DOM-Diffing Rendering'
+  title: 'DOM-Diffing Rendering'
 },
 {
   id: 'helpers',
@@ -212,10 +208,6 @@ const slides = [
 `
 },
 {
-  id: '257238703423',
-  title: 'Anwendungslogik mit Helpern implementieren ist keine gute Idee.'
-},
-{
   id: 'custom-helpers',
   title: 'Custom Helpers'
 },
@@ -230,7 +222,7 @@ const slides = [
 {
   id: '90238970458476662',
   code:
-`import Ember from 'ember';
+`import Ember from 'ember'; // ES6 module import
 import moment from 'npm:moment'; // ember-browserify
 
 export function myDate() {
@@ -238,6 +230,7 @@ export function myDate() {
   .format('dddd, MMM Do YYYY');
 }
 
+// ES6 module export
 export default Ember.HTMLBars.makeBoundHelper(myDate);`
 },
 {
@@ -409,6 +402,18 @@ export default Router;`
   title: 'Resource: Nomen, Route: Verb'
 },
 {
+  id: '3423346345353645',
+  code:
+`// router.js
+Router.map(function() {
+  this.route('article');
+});
+
+// template/article.hbs
+// routes/article.js
+// controllers/article.js`
+},
+{
   id: '845763252354753',
   code:
 `// routes/article.js
@@ -417,7 +422,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model: function(params) {
     // Ember Data
-    this.store.find('slide', params.article_id);
+    this.store.find('article', params.article_id);
   }
 });`
 },
@@ -471,18 +476,16 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   verified: attr('boolean', {defaultValue: false}),
   born: DS.attr('date'),
+  articles: DS.hasMany('article'),
+  organisation: DS.belongsTo('organisation'),
   age: function() {
     return [...];
-  }.property('birthday')
+  }.property('born')
 });`
 },
 {
-  id: '5748679578456834',
-  title: 'hasmany und belongsto Beziehungen'
-},
-{
   id: '246927608946275',
-  title: 'Häufig benötigte Transformationen als computed properties abspeichern'
+  title: 'Häufig benötigte Transformationen als computed properties definieren'
 },
 {
   id: 'controller',
@@ -571,12 +574,16 @@ export default Ember.Controller.extend({
   `<ul>
     <li>Ember Generator</li>
     <li>Module Resolver</li>
-    <li>babel.js</li>
     <li>Broccoli</li>
-    <li>Testing</li>
-    <li>Linting</li>
+    <li>babel.js</li>
+    <li>QUnit</li>
+    <li>jshint</li>
     <li>Live Reload</li>
   </ul>`
+},
+{
+  id: '3463473463453745',
+  title: 'ember serve'
 },
 {
   id: '496784759345445',
@@ -739,18 +746,7 @@ export default Ember.Controller.extend({
 },
 {
   id: 'es2015',
-  title: 'Spielwiese für <strike>ES6</strike> ES2015'
-},
-{
-  id: '456745868456722',
-  code:
-`// Nützliche ES2015 Features
-
-const, let
-\`template strings &&
-tagged templates\`
-import foo from 'module'
-promise.then(onSuccess, onFail)`
+  title: 'Spielwiese für ES6'
 },
 {
   id: 'spacecat',
@@ -830,7 +826,6 @@ promise.then(onSuccess, onFail)`
   main: `
   <p><small>
   <a href="http://www.emberaddons.com">emberaddons.com</a><br>
-  <a href="http://eloquentjavascript.net/">Eloquent Javascript</a> von <a href="https://twitter.com/marijnjh">@marijnjh</a><br>
     <a href="https://www.youtube.com/watch?v=2b1vcg_XSR8">Test Driven Development Talk</a> von <a href="https://twitter.com/toranb">@toranb</a><br>
   <a href="http://shoptalkshow.com/episodes/147-tom-dale/">ShopTalk Show Episode 147</a> mit <a href="https://twitter.com/tomdale">@tomdale</a>
   </small></p>
