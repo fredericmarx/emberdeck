@@ -406,7 +406,7 @@ export default Router;`
   code:
 `// router.js
 Router.map(function() {
-  this.route('article');
+  this.resource('article');
 });
 
 // template/article.hbs
