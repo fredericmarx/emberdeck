@@ -50,7 +50,7 @@ const slides = [
     <li>Bound Templates</li>
     <li>Data Models</li>
     <li>Routing</li>
-    <li>REST Schnittstelle</li>
+    <li>RESTful API</li>
   </ul>
   `
 },
@@ -62,7 +62,7 @@ const slides = [
     <li>Bound Templates</li>
     <li>Data Models</li>
     <li>Routing</li>
-    <li>REST Schnittstelle</li>
+    <li>RESTful API</li>
     <li>Anwendungsarchitektur</li>
     <li>Build Tools</li>
   </ul>
