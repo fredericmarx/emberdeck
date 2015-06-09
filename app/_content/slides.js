@@ -20,7 +20,7 @@ const slides = [
 },
 {
   id: '123123144',
-  main:'<iframe src="//giphy.com/embed/jGa1qMM9EM944" width="480" height="314" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+  main:'<iframe src="//giphy.com/embed/jGa1qMM9EM944" width="480" height="314" frameBorder="0" style="max-width: 100%" class="giphy-embed full-width" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
 },
 {
   id: '12344346',
@@ -70,7 +70,7 @@ const slides = [
 },
 {
   id: 'magic',
-  main:'<iframe src="//giphy.com/embed/n0WvhHFTpihk4" width="480" height="274" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+  main:'<iframe src="//giphy.com/embed/n0WvhHFTpihk4" width="480" height="274" frameBorder="0" style="max-width: 100%" class="giphy-embed full-width" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
 },
 {
   id: 'gravatar',
@@ -613,6 +613,10 @@ export default Ember.Controller.extend({
   `
 },
 {
+  id: '45934867234235',
+  main:'<img src="http://upload.wikimedia.org/wikipedia/commons/7/74/Line0534.jpg" class="full-width">'
+},
+{
   id: '89778234824873',
   main:`
   <p>Ember hat den Ruf, monolithisch zu sein.</p>
@@ -638,6 +642,11 @@ export default Ember.Controller.extend({
 {
   id: '357946752578',
   title: 'Das Ember Ökosystem ist sehr&nbsp;agil.'
+},
+{
+  id: '234563492375',
+  title: 'Darunter leidet als erstes die Dokumentation.',
+  subtitle: '(Auch wenn diese eine hohe Priorität hat)'
 },
 {
   id: '3254237345456',
@@ -750,7 +759,7 @@ export default Ember.Controller.extend({
 },
 {
   id: 'spacecat',
-  main:'<iframe src="//giphy.com/embed/OTOXNsMqmoNEI" width="480" height="441" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+  main:'<iframe src="//giphy.com/embed/OTOXNsMqmoNEI" width="480" height="441" frameBorder="0" style="max-width: 100%" class="giphy-embed full-width" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
 },
 {
   id: 'zukunft',
