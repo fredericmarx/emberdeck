@@ -472,9 +472,13 @@ export default DS.Model.extend({
   verified: attr('boolean', {defaultValue: false}),
   born: DS.attr('date'),
   age: function() {
-    // ...
+    return [...];
   }.property('birthday')
 });`
+},
+{
+  id: '5748679578456834',
+  title: 'hasmany und belongsto Beziehungen'
 },
 {
   id: '246927608946275',
