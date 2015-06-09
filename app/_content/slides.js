@@ -620,14 +620,14 @@ export default Ember.Controller.extend({
   subtitle: 'Tom Dale'
 },
 {
+  id: '45934867234235',
+  main:'<img src="http://upload.wikimedia.org/wikipedia/commons/7/74/Line0534.jpg" class="full-width">'
+},
+{
   id: '78456745846529',
   main:`
   <p>Ember hat den Ruf, monolithisch zu sein.</p>
   `
-},
-{
-  id: '45934867234235',
-  main:'<img src="http://upload.wikimedia.org/wikipedia/commons/7/74/Line0534.jpg" class="full-width">'
 },
 {
   id: '89778234824873',
