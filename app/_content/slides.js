@@ -2,7 +2,7 @@ const slides = [
 
 {
   id: '1',
-  title: 'Ember.js: Old hamster, new tricks'
+  title: 'Ember.js 2.0: Old hamster, new tricks'
 },
 {
   id: '234523525',
