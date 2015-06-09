@@ -414,6 +414,31 @@ Router.map(function() {
 // controllers/article.js`
 },
 {
+  id: '784563456345',
+  title: 'Convention over Configuration'
+},
+{
+  id: '5645786789664545',
+  title: 'Ember CLI verdrahtet anhand von Namenskonventionen automatisch Models, Routen und Controller'
+},
+{
+  id: '8457345723452934',
+  title: 'Die Route ist der Ort für Initialisierung des Models, Weiterleitung,&nbsp;etc.'
+},
+{
+  id: '3457456345346',
+  code:
+`// routes/article.js
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+  model: function(params) {
+    // Ohne Ember Data
+    return Ember.$.getJSON( [...] );
+  }
+});`
+},
+{
   id: '845763252354753',
   code:
 `// routes/article.js
@@ -425,18 +450,6 @@ export default Ember.Route.extend({
     this.store.find('article', params.article_id);
   }
 });`
-},
-{
-  id: '8457345723452934',
-  title: 'Die Route ist der Ort für Initialisierung des Models, Weiterleitung,&nbsp;etc.'
-},
-{
-  id: '784563456345',
-  title: 'Convention over Configuration'
-},
-{
-  id: '5645786789664545',
-  title: 'Ember CLI verdrahtet anhand von Namenskonventionen automatisch Models, Routen und Controller'
 },
 {
   id: 'data',
