@@ -276,7 +276,7 @@ export default Ember.HTMLBars.makeBoundHelper(myDate);`
   main: `
 <p>Kernfeature für gekapselte, wiederverwendbare Einzelkomponenten in&nbsp;Ember.js</p>
 <p>Besitzen Template und Controller</p>
-<p>Können Gegensatz zu Helpern stateful, asynchron und interaktiv sein</p>
+<p>Können im Gegensatz zu Helpern stateful, asynchron und interaktiv sein</p>
 `
 },
 {
